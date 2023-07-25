@@ -1,0 +1,454 @@
+/*fonts*/
+
+@font-face {
+  font-family: Plante;
+  src: url("../fonts/Plante.ttf");
+}
+
+
+@font-face {
+  font-family: Playfair;
+  src: url("../fonts/Playfair.ttf");
+}
+
+@font-face {
+  font-family: PlayfairI;
+  src: url("../fonts/PlayfairI.ttf");
+}
+
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora.ttf");
+}
+
+
+@font-face {
+  font-family: Lobster;
+  src: url("../fonts/LobsterR.ttf");
+}
+
+@font-face {
+  font-family: CrimsonBI;
+  src: url("../fonts/Crimson/BI.ttf");
+}
+
+@font-face {
+  font-family: CrimsonB;
+  src: url("../fonts/Crimson/B.ttf");
+}
+
+.icon1{
+    font-family: Plante; 
+    font-size: 28pt;
+}
+
+.icon2{
+    font-family: CrimsonBI; 
+    font-size: 25pt; 
+    color: rgba(0,0,0,0.6);
+}
+
+.mainIntro1{
+    font-family: CrimsonBI; 
+    font-size: 25pt;
+}
+
+.mainIntro2{
+    font-family: PlayfairI; 
+    font-size: 18pt;
+}
+
+.text{
+    color: #242D38;
+    font-family: Lora;
+}
+
+.title{
+    font-family: CrimsonBI;
+    font-size: 26pt;
+}
+
+.workTitle{
+    font-family: CrimsonB;
+    font-size: 25pt;
+    color: rgba(0,0,0,0.75);
+}
+
+.text2{
+    color: rgba(0,0,0,0.7);
+    font-family: Lora;
+}
+
+.footerT{
+    font-family: CrimsonBI; 
+    font-size: 18pt;
+}
+
+/*main*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* 100%窗口高度 */
+    /*height: 100vh;*/
+    /*background-color: #333;*/
+    /*margin: aoto*/
+    min-width: 92vw;
+    max-width: 95vw;
+    /*width: 100vw;*/
+}
+
+canvas {
+    margin: auto;
+}
+
+:root{
+            --border-color:rgb(119,172,205);
+            --fill-color:rgb(215,228,236);
+}
+
+.btnT{
+    color: rgba(0,0,0,0.8);
+}
+
+/*nav CSS*/
+.scPos{
+    position: absolute;
+    right: 2vw;
+}
+
+.navBG{
+    background-color: white;
+    height: 12vh;
+    margin: auto;
+}
+
+.btnSC{
+    background-color: rgb(248,208,118);
+}
+
+.myNav{
+    height: 10vh;
+}
+
+/*about CSS*/
+.marginTop{
+    margin-top: 5vh;
+}
+
+.marginL{
+    margin-left: 8vw;
+}
+
+.noPadding{
+    padding: 0px;
+}
+
+.paddingL{
+    margin-left: 30px;
+}
+
+.paddingR{
+    margin-right: 60px;
+}
+
+.aboutBTN{
+    /*background-color: #A5D4F5;*/
+    background-color: rgba(138,165,222,0.8);
+}
+
+.myIMG{
+    /*width: 33vw;*/
+    /*height: 90vh;*/
+    width: 40vw;
+}
+
+.BG{
+    background-color: rgba(215,228,236,0.9);
+}
+
+.textBG{
+    /*height: 70vh;*/
+    background-color: rgb(220,234,225);
+
+}
+
+.textCTN{
+    color: rgba(0,0,0,0.6);
+    padding: 10px;
+    text-align: center;
+}
+
+/*skills CSS*/
+.cWrap{
+    margin: auto;
+    /*border: 1px solid red;*/
+}
+
+/*works CSS*/
+
+.mask{
+    border: 1px red solid;
+    height: 35vw;
+    /*width: 35vw;*/
+    background: white;
+    z-index: 10;
+}
+
+.padding{
+    padding: 10px;
+}
+
+.paddingLg{
+    padding: 50px;
+    padding-right: 20px: 
+}
+
+.work{
+    padding-left: 50px;
+}
+
+.intro{
+    padding-left: 70px;
+    padding-top: 25px;
+    /*background-color: rgba(220,234,225,0.7);*/
+    /*display: none;*/
+    /*margin: auto;*/
+}
+
+.introWrap{
+    margin: auto;
+}
+
+/*.introBG{
+    height: 35vw;
+    background-color: rgb(220,234,225);
+}*/
+
+.wIMG{
+    width: 35vw;
+    height: auto;
+}
+
+.wIMG2{
+    height: 35vw;
+    width: auto;
+}
+
+.work2{
+    padding-left: 50px;
+    /*display: none;*/
+}
+
+#sketch-holder{
+    /*display: none;*/
+}
+
+.intro2{
+    padding-left: 70px;
+    padding-top: 25px;
+    min-height: 35vw;
+    background-color: rgba(220,234,225,0.7);
+    max-height: 80vw;
+}
+
+/*contact CSS*/
+
+.btnCT{
+    background-color: rgba(125,180,225,0.9);
+}
+
+
+.contactTitle{
+    text-align: right;
+}
+
+/*footer CSS*/
+.contactBG{
+    /*background-color: #A5D4F5;*/
+    /*background-color: rgba(138,165,222,0.8);*/
+    background-color: rgba(215,228,236,0.9);
+}
+
+.footerBG{
+    /*background-color: #A5D4F5;*/
+    /*background-color: rgba(138,165,222,0.8);*/
+    background-color: rgb(178,210,200);
+}
+
+/*menu CSS*/
+.container0{
+    width: 15px;
+    height: 560px;
+    /* 绝对固定定位 */
+    position: fixed;
+    left: 0;
+    /* 垂直居中 */
+    top: 50%;
+    transform: translateY(-50%);
+    /*background-color: lightseagreen;*/
+    /*background-color: #222;*/
+    /* 右上右下圆角 */
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+    /* 动画过渡 */
+    transition: 0.3s;
+    z-index: 10000;
+}
+.container0:hover{
+    /* 鼠标移入，展开+改变圆角大小 */
+    width: 100px;
+    border-radius: 0 30px 30px 0;
+}
+.container0:hover li a{
+    /* 鼠标移入，改变字体颜色 */
+    color: #fff;
+}
+.container0::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /*background-color: lightseagreen;*/
+    background-color: rgb(178,210,200);
+}
+.container0 .top{
+    width: calc(100% - 50px);
+    margin-left: 30px;
+    height: 20%;
+    border-radius: 0 0 0 20px;
+    /* 动画过渡 */
+    transition: 0.2s;
+}
+.container0 .middle{
+    width: calc(100% - 60px);
+    height: 10%;
+    background-color: rgb(178,210,200);
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.container0 .bottom{
+    width: calc(100% - 30px);
+    height: 100%;
+    margin-left: 30px;
+    /*background-color: #222;*/
+    border-radius: 20px 0 0 0;
+}
+.container0 li{
+    /* 绝对定位 */
+    position: absolute;
+    /* 通过var函数调用自定义属性--t */
+    top: var(--t);
+    width: 100%;
+    height: 10%;
+    font-size: 30px;
+    /* 弹性布局 水平垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container0 li a{
+    /* 字体颜色透明 */
+    color: transparent;
+    /* 动画过渡 */
+    transition: 0.3s;
+}
+/* 分别为每一个li元素设置.top的高度 */
+/* ~是兄弟选择器 */
+.container0 li:nth-child(1):hover ~ .top{
+    height: 20%;
+}
+.container0 li:nth-child(2):hover ~ .top{
+    height: 30%;
+}
+.container0 li:nth-child(3):hover ~ .top{
+    height: 40%;
+}
+.container0 li:nth-child(4):hover ~ .top{
+    height: 50%;
+}
+.container0 li:nth-child(5):hover ~ .top{
+    height: 60%;
+}
+.container0 li:nth-child(6):hover ~ .top{
+    height: 70%;
+}
+/*menu CSS ends*/
+
+/*bottle starts*/
+.cup{
+    background-color: #fff;
+    border: 4px solid var(--border-color);
+    color: var(--border-color);
+    border-radius: 0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.cup.cup-small{
+    height: 100px;
+    width: 60px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(215,228,236,0.9);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    transition: 0.3s ease;
+    color: rgba(72,82,104,0.7);
+}
+
+.cups{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 32vw;
+    max-width: 80vw;
+}
+
+.remained{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.percentage{
+    background-color: var(--fill-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    height: 0;
+    transition: 0.3s ease;
+}
+
+.percentage small{
+    font-size: 12px;
+}
+
+/*bottle ends*/
+
+/*cards starts*/
+
+/*cards ends*/

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lydia :)</title>
+
+	<!-- boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+	<!--my css -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
+	<!-- Media query for narrow browser width -->
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<!-- my js -->
+	<script src="js/myJS.js"></script>
+
+	<!-- external -->
+	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- p5 demo -->
+	<script src="libraries/p5.js"></script>
+	<!-- <script src="libraries/p5.sound.js"></script> -->
+	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+	<!-- <script src="js/sketch.js"></script> -->
+
+
+</head>
+<body>
+
+	<div class="container-fluid noPadding">
+		<div class="container0">
+			<li style="--t:10%;">
+	            <a href="#about">
+	            	<i class="bi bi-house-heart" aria-hidden="true"></i>
+	            </a>
+	        </li>
+	        <li style="--t:30%;">
+	            <a href="#skill">
+	                <i class="bi bi-clipboard-heart" aria-hidden="true"></i>
+	            </a>
+	        </li>
+	        <li style="--t:50%;">
+	            <a href="#work">
+	                <i class="bi bi-collection" aria-hidden="true"></i>
+	            </a>
+	        </li>
+	        <li style="--t:70%;">
+	            <a href="#contact">
+	                <i class="bi bi-envelope-heart" aria-hidden="true"></i>
+	            </a>
+	        </li>
+		</div>
+		<!-- menu ends -->
+		<!-- nav starts -->
+		<div class="row myNav">
+			<div class="col-md-12 myNav">
+				<nav class="navbar navbar-expand-sm fixed-top navBG">
+				  <div class="container-fluid">
+				    <a class="navbar-brand" href="#about"><button type="button" class="btn btnL btnFT"><h1>
+				    	<span class="icon1">Lydia</span>
+				    	<span class="icon2">&nbsp;L</span>
+				    </h1></button></a>
+				    <!-- <form class="d-flex" role="search">
+				       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				       <button type="button" class="btn btnSC">Search</button>
+				    </form> -->
+				     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				      <form class="d-flex scPos" role="search">
+				        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+				        <button type="button" class="btn btnSC">Search</button>
+				      </form>
+				    </div>
+				  </div>
+				</nav>
+			</div>
+		</div>
+		<!-- nav ends -->
+		<!-- about start -->
+		<div class="row marginTop marginL textBG" id="about">
+			<div class="col-md-6 d-flex justify-content-center my-auto">
+				<div class="textCTN">
+					<h3 class="mainIntro1">Hi, I'm Lydia</h3>
+					<h5 class="mainIntro2">A Web/Game Developer & Designer!</h5>
+					<h5 class="mainIntro2">--</h5>
+					<h5 class="mainIntro2">Welcome to My Portfolio Site --</h5>
+					<h5 class="mainIntro2">Let's Explore & Get Connected ><</h5>
+					<br>
+					<br>
+					<br>
+					<h2 style="font-family: CrimsonBI; font-size: 25pt;"><a href="#skill"><button class="btn btn-lg aboutBTN btnT">Get Started &raquo;</button></a></h2>
+				</div>
+				
+			</div>
+			<div class="col-md-6 d-flex justify-content-center BG">
+				<img class="myIMG" src="images/me1_2.jpeg">
+			</div>
+
+		</div>
+		<!-- about end -->
+		<hr>
+		<!-- skill starts -->
+		<div class="row" id="skill">
+			<div class="col-md-6 d-flex justify-content-center my-auto">
+				<div class="cup">
+			        <div class="remained" id="remained">
+			            <span id="liters"></span>
+			            <small class="text" style="color: #4D5D75;">Master</small>
+			        </div>
+
+			        <div class="percentage" id="percentage">
+			        
+			        </div>
+			    </div>
+			</div>
+			
+			<div class="col-md-6 d-flex justify-content-center my-auto">
+				<div class="cups_wrap">
+					<h3 class="title"><i class="bi bi-clipboard-heart" aria-hidden="true"></i> &nbsp; Here are some Skills that I have...</h3>
+
+				    <div class="cups cWrap">
+				        <div class="cup cup-small c1 text">Web Design & Dev</div>
+				        <div class="cup cup-small c2 text">Game Design & Dev</div>
+				        <div class="cup cup-small c3 text">Python</div>
+				        <div class="cup cup-small c4 text">AR & VR design</div>
+				        <div class="cup cup-small c5 text">Still & Moving Images</div>
+				        <div class="cup cup-small c6 text">Writting</div>
+				        <div class="text" style="color: #4D5D75;">Click them!</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!-- skill ends -->
+		<hr>
+		<!-- works starts -->
+		<div class="row workSt">
+			<div class="col-md-12 padding marginL">
+				<h2 class="title"><i class="bi bi-collection" aria-hidden="true"></i> &nbsp;Gallery</h2>
+			</div>
+		</div>
+		<div class="row padding" id="work">
+			<div class="col-md-5 work BG">
+				<img src="images/multiX.jpeg" class="wIMG">
+			</div>
+			<div class="col-md-7 intro">
+				<!-- <div class="mask"></div> -->
+				<div class="introWrap paddingR">
+					<br>
+					<h2 class="workTitle">Verse No.1555</h2>
+					<br>
+					<p class="text2">An interactive mixed-reality experience of NYUSH Century Avenue academic building</p>
+					<p class="text2">It's an MultiX project, in which I worked as a Technical Artist & Programmer</p>
+					<br>
+					<br>
+					<a href="https://10years.shanghai.nyu.edu/virtual-campus/interact/" target="blank"><button class="btn aboutBTN btnT text2">Read More &raquo;</button></a>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row padding">
+			<div class="col-md-5 intro">
+				<!-- <div class="mask"></div> -->
+				<div class="introWrap">
+					<h2 class="workTitle">See, Sea</h2>
+					<br>
+					<p class="text2">This is a photo diptych practice for class INTM-SHU – 120 #Communications Lab, using Photoshop. </p>
+					<p class="text2">Every graphic element presented is taken and manipulated by me.</p>
+					<br>
+					<a href="https://wp.nyu.edu/rainlin/2022/03/28/comm-lab-see-photo-diptych-final-documentation/" target="blank"><button class="btn aboutBTN btnT text2">Read More &raquo;</button></a>
+				</div>
+			</div>
+			<div class="col-md-7 work BG">
+				<img src="images/pd.jpg" class="wIMG2">
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row padding">
+			<div class="col-md-5 work BG">
+				<img src="images/nft.png" class="wIMG">
+			</div>
+			<div class="col-md-7 intro">
+				<!-- <div class="mask"></div> -->
+				<div class="introWrap paddingR">
+					<br>
+					<h2 class="workTitle">METAVERSE – NFTS</h2>
+					<br>
+					<p class="text2">An NFT designed for 1st edition of Oxford English Dictionary Anniversary.</p>
+					<p class="text2">Designed with Blender</p>
+					<br>
+					<a href="https://wp.nyu.edu/lydia_portfolio_22/2022/09/27/metaverse-nfts/" target="blank"><button class="btn aboutBTN btnT text2">Read More &raquo;</button></a>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row padding">
+			<div class="col-md-5 intro2">
+				<div class="introWrap">
+					<h2 class="workTitle">What I'm Up to...</h2>
+					<h5 class="text3">Experimenting with p5.js & ml5 machine learning models!</h5>
+					<p class="text2">Click the button bellow to see a demo - </p>
+					<p class="text2">*this would require the access to your web cam</p>
+					<!-- <p class="text2">**You may need to wait a few seconds for the model to load</p> -->
+					<button class="btn aboutBTN btnT btnC text2">See Demo &raquo;</button>
+				</div>
+			</div>
+			<div class="col-md-7 work2 d-flex justify-content-center my-auto BG">
+				<div id="sketch-holder"></div>
+			</div>
+		</div>
+
+		<!-- works ends -->
+
+		<hr>
+
+		<!-- contact starts -->
+
+		<div class="contact contactBG noPadding" id="contact">
+			<div class="contactWrap paddingLg">
+				<div class="row contactTitle">
+					<h2 class="title">Contact Me &nbsp;<i class="bi bi-envelope-heart" aria-hidden="true"></i></h2>
+				</div>
+				<form class="row g-3 padding">
+				  <div class="col-md-12">
+				  	<label for="inputEmail4" class="form-label text2">Name</label>
+				    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+				  </div>
+				  <div class="col-md-12">
+				    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+				  </div>
+				  <div class="col-md-12">
+				    <label for="inputEmail4" class="form-label text2">Email</label>
+				    <input type="email" class="form-control" id="inputEmail4" placeholder="Email address" aria-label="Email address">
+				  </div>
+				  <div class="col-md-12">
+				    <label for="inputEmail4" class="form-label text2">How May I Help You?</label>
+				    <input type="text" class="form-control" id="inputEmail4" placeholder="What can I do for you: ">
+				  </div>
+				  <div class="col-12">
+				    <div class="form-check">
+				      <input class="form-check-input" type="checkbox" id="gridCheck">
+				      <label class="form-check-label text2" for="gridCheck">
+				        Keep me updated ><
+				      </label>
+				    </div>
+				  </div>
+				  <div class="col-12">
+				    <button type="submit" class="btn btnCT text">&nbsp;Connect&nbsp;</button>
+				  </div>
+				</form>
+			</div>
+		</div>
+		<!-- contact ends -->
+		<!-- footer starts -->
+		<footer class="row footerBG paddingLg text">
+			<div class="col-md-12 my-auto">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 d-flex justify-content-evenly align-items-center">
+							<i class="bi bi-instagram"></i>
+							<i class="bi bi-meta"></i>
+							<i class="bi bi-linkedin"></i>
+							<i class="bi bi-tiktok"></i>
+						</div>
+						<div class="col-md-6 d-flex flex-column justify-content-center">
+						<h4 class="footerT">Comments, Thoughts, Or ...</h4>
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Anything you want to share with me!" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary btnCT" type="button" id="button-addon2">&nbsp;Send&nbsp;</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer ends -->
+	</div>
+
+
+	<!-- bootstrap js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+	<!-- <script src="js/sketch.js"></script> -->
+
+</body>
+</html>
