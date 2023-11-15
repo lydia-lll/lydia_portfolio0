@@ -7,8 +7,12 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
-	<!--my css -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
+	<!--vcard css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- responsive css from temp 1 -->
+	<link rel="stylesheet" href="css/responsive.css">
+
 	<!-- Media query for narrow browser width -->
 	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
 
@@ -26,33 +30,34 @@
 	<!-- my js -->
 	<script src="js/myJS.js"></script>
 
+	<!--
+    - google font link
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 	<!-- external -->
 	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-	<!-- p5 demo -->
-	<script src="libraries/p5.js"></script>
-	<!-- <script src="libraries/p5.sound.js"></script> -->
-	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-	<!-- <script src="js/sketch.js"></script> -->
 
 
 </head>
 <body>
-
-	<div class="container-fluid noPadding">
+	<!-- menu starts -->
+	<div class="container-fluid">
 		<div class="container0">
 			<li style="--t:10%;">
-	            <a href="#about">
+	            <a href="#main">
 	            	<i class="bi bi-house-heart" aria-hidden="true"></i>
 	            </a>
 	        </li>
 	        <li style="--t:30%;">
-	            <a href="#skill">
+	            <a href="#about">
 	                <i class="bi bi-clipboard-heart" aria-hidden="true"></i>
 	            </a>
 	        </li>
 	        <li style="--t:50%;">
-	            <a href="#work">
+	            <a href="#project">
 	                <i class="bi bi-collection" aria-hidden="true"></i>
 	            </a>
 	        </li>
@@ -64,169 +69,374 @@
 		</div>
 		<!-- menu ends -->
 		<!-- nav starts -->
-		<div class="row myNav">
-			<div class="col-md-12 myNav">
-				<nav class="navbar navbar-expand-sm fixed-top navBG">
-				  <div class="container-fluid">
-				    <a class="navbar-brand" href="#about"><button type="button" class="btn btnL btnFT"><h1>
-				    	<span class="icon1">Lydia</span>
-				    	<span class="icon2">&nbsp;L</span>
-				    </h1></button></a>
-				    <!-- <form class="d-flex" role="search">
-				       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				       <button type="button" class="btn btnSC">Search</button>
-				    </form> -->
-				     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				      <span class="navbar-toggler-icon"></span>
-				    </button>
-				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				      <form class="d-flex scPos" role="search">
-				        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-				        <button type="button" class="btn btnSC">Search</button>
-				      </form>
-				    </div>
-				  </div>
+		<header class="header_area">
+			<div class="main_menu" id="mainNav">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h header_logo" href="index.html">Lydia Lin</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav" style="margin-left:auto;">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+								<li class="nav-item submenu dropdown">
+									<a href="#project" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Portfolio</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Writing Samples</a></li>
+									</ul>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
 				</nav>
 			</div>
-		</div>
+		</header>
 		<!-- nav ends -->
 		<!-- about start -->
 		<div class="row marginTop marginL textBG" id="about">
-			<div class="col-md-6 d-flex justify-content-center my-auto">
+			<div class="col-md-7 d-flex justify-content-center my-auto">
 				<div class="textCTN">
-					<h3 class="mainIntro1">Hi, I'm Lydia</h3>
-					<h5 class="mainIntro2">A Web/Game Developer & Designer!</h5>
-					<h5 class="mainIntro2">--</h5>
-					<h5 class="mainIntro2">Welcome to My Portfolio Site --</h5>
-					<h5 class="mainIntro2">Let's Explore & Get Connected ><</h5>
+					<h3 id="main" class="mainIntro1">Hi, I'm Lydia</h3>
+					<h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#2b423e"></span></h5>
+					<!-- <h5 class="mainIntro2">A Web/Game Developer & Designer!</h5> -->
+					<!-- <h5 class="mainIntro2">--</h5> -->
+					<br>
+					<p class="mainIntro2">A self-motivated problem-solver with a curious mind</p>
+					<p class="mainIntro2">An developer & artist who loves the boundless world of XR and gaming</p>
 					<br>
 					<br>
-					<br>
-					<h2 style="font-family: CrimsonBI; font-size: 25pt;"><a href="#skill"><button class="btn btn-lg aboutBTN btnT">Get Started &raquo;</button></a></h2>
+					<p style="font-family: AndaleMono; font-size: 16pt;"><a href="#skill"><button class="btn aboutBTN btnT">Get Started &raquo;</button></a></h2>
 				</div>
 				
 			</div>
-			<div class="col-md-6 d-flex justify-content-center BG">
+			<!-- <div class="col-md-5 d-flex justify-content-center BG">
 				<img class="myIMG" src="images/me1_2.jpeg">
-			</div>
+			</div> -->
 
 		</div>
 		<!-- about end -->
-		<hr>
-		<!-- skill starts -->
-		<div class="row" id="skill">
-			<div class="col-md-6 d-flex justify-content-center my-auto">
-				<div class="cup">
-			        <div class="remained" id="remained">
-			            <span id="liters"></span>
-			            <small class="text" style="color: #4D5D75;">Master</small>
-			        </div>
-
-			        <div class="percentage" id="percentage">
-			        
-			        </div>
-			    </div>
-			</div>
-			
-			<div class="col-md-6 d-flex justify-content-center my-auto">
-				<div class="cups_wrap">
-					<h3 class="title"><i class="bi bi-clipboard-heart" aria-hidden="true"></i> &nbsp; Here are some Skills that I have...</h3>
-
-				    <div class="cups cWrap">
-				        <div class="cup cup-small c1 text">Web Design & Dev</div>
-				        <div class="cup cup-small c2 text">Game Design & Dev</div>
-				        <div class="cup cup-small c3 text">Python</div>
-				        <div class="cup cup-small c4 text">AR & VR design</div>
-				        <div class="cup cup-small c5 text">Still & Moving Images</div>
-				        <div class="cup cup-small c6 text">Writting</div>
-				        <div class="text" style="color: #4D5D75;">Click them!</div>
-				    </div>
+		<br>
+		<section class="main_about">
+			<div class="container">
+				<div class="row welcome_inner">
+					<div class="col-lg-6">
+						<div class="welcome_text" id="about">
+							<h4 class="article-title">About Myself</h4>
+							<p>As an NYU Shanghai undergraduate, I'm pursuing a double major in Interactive Media Arts and Social Science Psychology Track, 
+								which allows me to combine my passions for art and science. Initially, I didn't imagine a path that could 
+								accommodate all my interests, but my current major has proven me wrong! It has allowed me to engage in design, modeling, programming, development, writing, and research all at once - a challenging, but fulfilling, experience. I relish the problem-solving aspect of my studies, and I'm currently diving into XR development.</p>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="wel_item">
+										<i class="lnr lnr-database"></i>
+										<h4>4+</h4>
+										<p>Work Experience</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="wel_item">
+										<i class="lnr lnr-book"></i>
+										<h4>2</h4>
+										<p>Research Projects</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="wel_item">
+										<i class="lnr lnr-users"></i>
+										<h4>10+</h4>
+										<p>Total Projects</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6" >
+						<div class="tools_expert">
+							<h3>Tools Expertness</h3>
+							<div class="skill_main">
+								<div class="skill_item">
+									<h4>C#, Unity  <span class="counter">88</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>HTML, CSS, JS  <span class="counter">90</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Python, Swift, PHP, MYSQL, HLSL  <span class="counter">70</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Maya, Blender  <span class="counter">82</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Figma, PS, AE, AI, AU, PR  <span class="counter">90</span>%</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+		</section>
+		<br>
+		<!-- portfolio starts -->
+		<div class="main_port" id="project">
+			<header>
+				<h2 class="h2 article-title title">Projects</h2>
+			</header>
+	  
+			  <section class="projects text">
+	  
+				<ul class="filter-list">
+	  
+				  <li class="filter-item">
+					<button class="active" data-filter-btn>All</button>
+				  </li>
+	  
+				  <li class="filter-item">
+					<button data-filter-btn>#XR Development</button>
+				  </li>
+	  
+				  <li class="filter-item">
+					<button data-filter-btn>#Web Development</button>
+				  </li>
+
+				  <li class="filter-item">
+					<button data-filter-btn>#Game Design</button>
+				  </li>
+
+				  <li class="filter-item">
+					<button data-filter-btn>#UX Design</button>
+				  </li>
+
+				  <li class="filter-item">
+					<button data-filter-btn>#2D/3D Design</button>
+				  </li>
+
+				  <li class="filter-item">
+					<button data-filter-btn>#Visual Storytelling</button>
+				  </li>
+	  
+				</ul>
+	  
+				<div class="filter-select-box">
+	  
+				  <button class="filter-select" data-select>
+	  
+					<div class="select-value" data-selecct-value>Select category</div>
+	  
+					<div class="select-icon">
+					  <ion-icon name="chevron-down"></ion-icon>
+					</div>
+	  
+				  </button>
+	  
+				</div>
+	  
+				<ul class="project-list">
+	  
+				  <li class="project-item  active" data-filter-item data-category="#game design, #xr development">
+					<a href="peach2.html">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+						  <!-- <ion-icon name="eye-outline"></ion-icon> -->
+						  <p class="intro-box-text">A haunting dystopia AR experience inspired by 'Peach Blossom Spring'</p>
+						</div>
+	  
+						<img src="images/peach/entrance1.png" alt="peach blossom spring" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">Peach Blossom -topia</h3>
+	  
+					  <p class="project-category">AR Game / Experience</p>
+					  
+	  
+					</a>
+				  </li>
+
+				  <li class="project-item  active" data-filter-item data-category="#xr development">
+					<a href="garden.html">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+							<p class="intro-box-text">An immersive environment exploring possibilities of time perception in VR</p>
+						</div>
+	  
+						<img src="images/garden/cover.png" alt="garden eternity" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">Garden: Eternity</h3>
+	  
+					  <p class="project-category">VR Immersive Environment</p>
+	  
+					</a>
+				  </li>
+	  
+				  <li class="project-item  active" data-filter-item data-category="#xr development">
+					<a href="opera_face.html">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+							<p class="intro-box-text">Peking Opera Face Band: An Award-winning AR App featuring facial recognition</p>
+						  </div>
+	  
+						<img src="images/opera/operaWeb2.png" alt="opera face" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">Opera Face</h3>
+	  
+					  <p class="project-category">AR Music App</p>
+	  
+					</a>
+				  </li>
+	  
+				  <li class="project-item  active" data-filter-item data-category="#xr development, #ux design">
+					<a href="dream_home.html">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+							<p class="intro-box-text">Peking Opera Face Band: An Award-winning AR App featuring facial recognition</p>
+						</div>
+	  
+						<img src="images/home/livingroomMoutDay.png" alt="true dream home" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">True Dream Home</h3>
+	  
+					  <p class="project-category">VR-Centric User Experience</p>
+	  
+					</a>
+				  </li>
+	  
+				  <li class="project-item  active" data-filter-item data-category="#xr development, #ux design">
+					<a href="verse1555.html">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+							<p class="intro-box-text">a virtual hub of personal and collective experiences of NYUSH community</p>
+						</div>
+	  
+						<img src="images/archive/multiX.jpeg" alt="verse1555" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">Verse No.1555</h3>
+	  
+					  <p class="project-category">Cross-Platform XR Experience</p>
+	  
+					</a>
+				  </li>
+	  
+				  <li class="project-item  active" data-filter-item data-category="#xr development, #ux design">
+					<a href="art_therapy.html">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+							<p class="intro-box-text">An on-going project: a virtual therapy space for emotional exploration and self-expression</p>
+						</div>
+	  
+						<img src="images/art_therapy/room.png" alt="art therapy" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">Immersive Art Therapy</h3>
+	  
+					  <p class="project-category">VR Application</p>
+	  
+					</a>
+				  </li>
+	  
+				  <li class="project-item  active" data-filter-item data-category="#visual storytelling">
+					<a href="zero.html">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+						  <p class="intro-box-text">A haunting exploration of surveillance and censorship during the Shanghai lockdown</p>
+						</div>
+	  
+						<img src="images/zero/msg.png" alt="zero" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">Dynamic Zero</h3>
+	  
+					  <p class="project-category">Short Film - Visual Metaphor</p>
+	  
+					</a>
+				  </li>
+	  
+				  <li class="project-item  active" data-filter-item data-category="#2d/3d design">
+					<a href="nature_band.html">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+							<p class="intro-box-text">An interactive Installation to create a symphony of nature sounds</p>
+						</div>
+	  
+						<img src="images/nature_band/cover.jpg" alt="task manager" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">Nature Band</h3>
+	  
+					  <p class="project-category">Interactive Installation</p>
+	  
+					</a>
+				  </li>
+	  
+				  <!-- <li class="project-item  active" data-filter-item data-category="web development">
+					<a href="#">
+	  
+					  <figure class="project-img">
+						<div class="project-item-icon-box">
+						  <ion-icon name="eye-outline"></ion-icon>
+						</div>
+	  
+						<img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+					  </figure>
+	  
+					  <h3 class="project-title">Arrival</h3>
+	  
+					  <p class="project-category">Web development</p>
+	  
+					</a>
+				  </li> -->
+	  
+				</ul>
+	  
+			  </section>
 		</div>
-		<!-- skill ends -->
-		<hr>
+		<!-- portfolio ends -->
 		<!-- works starts -->
-		<div class="row workSt">
+		<!-- <div class="row workSt">
 			<div class="col-md-12 padding marginL">
 				<h2 class="title"><i class="bi bi-collection" aria-hidden="true"></i> &nbsp;Gallery</h2>
 			</div>
-		</div>
-		<div class="row padding" id="work">
-			<div class="col-md-5 work BG">
-				<img src="images/multiX.jpeg" class="wIMG">
-			</div>
-			<div class="col-md-7 intro">
-				<!-- <div class="mask"></div> -->
-				<div class="introWrap paddingR">
-					<br>
-					<h2 class="workTitle">Verse No.1555</h2>
-					<br>
-					<p class="text2">An interactive mixed-reality experience of NYUSH Century Avenue academic building</p>
-					<p class="text2">It's an MultiX project, in which I worked as a Technical Artist & Programmer</p>
-					<br>
-					<br>
-					<a href="https://10years.shanghai.nyu.edu/virtual-campus/interact/" target="blank"><button class="btn aboutBTN btnT text2">Read More &raquo;</button></a>
-				</div>
-			</div>
-		</div>
-
-		<br>
-
-		<div class="row padding">
-			<div class="col-md-5 intro">
-				<!-- <div class="mask"></div> -->
-				<div class="introWrap">
-					<h2 class="workTitle">See, Sea</h2>
-					<br>
-					<p class="text2">This is a photo diptych practice for class INTM-SHU – 120 #Communications Lab, using Photoshop. </p>
-					<p class="text2">Every graphic element presented is taken and manipulated by me.</p>
-					<br>
-					<a href="https://wp.nyu.edu/rainlin/2022/03/28/comm-lab-see-photo-diptych-final-documentation/" target="blank"><button class="btn aboutBTN btnT text2">Read More &raquo;</button></a>
-				</div>
-			</div>
-			<div class="col-md-7 work BG">
-				<img src="images/pd.jpg" class="wIMG2">
-			</div>
-		</div>
-
-		<br>
-
-		<div class="row padding">
-			<div class="col-md-5 work BG">
-				<img src="images/nft.png" class="wIMG">
-			</div>
-			<div class="col-md-7 intro">
-				<!-- <div class="mask"></div> -->
-				<div class="introWrap paddingR">
-					<br>
-					<h2 class="workTitle">METAVERSE – NFTS</h2>
-					<br>
-					<p class="text2">An NFT designed for 1st edition of Oxford English Dictionary Anniversary.</p>
-					<p class="text2">Designed with Blender</p>
-					<br>
-					<a href="https://wp.nyu.edu/lydia_portfolio_22/2022/09/27/metaverse-nfts/" target="blank"><button class="btn aboutBTN btnT text2">Read More &raquo;</button></a>
-				</div>
-			</div>
-		</div>
-
-		<br>
-
-		<div class="row padding">
-			<div class="col-md-5 intro2">
-				<div class="introWrap">
-					<h2 class="workTitle">What I'm Up to...</h2>
-					<h5 class="text3">Experimenting with p5.js & ml5 machine learning models!</h5>
-					<p class="text2">Click the button bellow to see a demo - </p>
-					<p class="text2">*this would require the access to your web cam</p>
-					<!-- <p class="text2">**You may need to wait a few seconds for the model to load</p> -->
-					<button class="btn aboutBTN btnT btnC text2">See Demo &raquo;</button>
-				</div>
-			</div>
-			<div class="col-md-7 work2 d-flex justify-content-center my-auto BG">
-				<div id="sketch-holder"></div>
-			</div>
-		</div>
+		</div> -->
+		
 
 		<!-- works ends -->
 
@@ -271,7 +481,7 @@
 		</div>
 		<!-- contact ends -->
 		<!-- footer starts -->
-		<footer class="row footerBG paddingLg text">
+		<footer class="row footerBG noPadding text" style="min-height: 28vh;">
 			<div class="col-md-12 my-auto">
 				<div class="container">
 					<div class="row">
@@ -295,10 +505,24 @@
 		<!-- footer ends -->
 	</div>
 
+	<!-- typed.js -->
+	<script src="js/typed.js/typed.min.js"></script>
+	<script type="text/javascript">
+		var typed = new Typed('.typing',{
+		strings: ["Designer", "Developer", "Fast Learner"],
+		loop: true,
+		typeSpeed: 80,
+		backSpeed: 40
+		});
+	</script>
+
+	<!--- vcard js link-->
+    <!-- <script src="./js/script.js"></script> -->
 
 	<!-- bootstrap js -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+	<script src="js/counter-up/jquery.waypoints.min.js"></script>
+	<script src="js/counter-up/jquery.counterup.min.js"></script>
 	<!-- <script src="js/sketch.js"></script> -->
 
 </body>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lydia :)</title>
+
+	<!-- boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+	<!--vcard css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- responsive css from temp 1 -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<!-- Media query for narrow browser width -->
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<!-- my js -->
+	<script src="js/myJS.js"></script>
+
+	<!--
+    - google font link
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<!-- external -->
+	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- p5 demo -->
+	<script src="libraries/p5.js"></script>
+	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <style>
+		.carousel-item {
+		position: relative;
+		min-width: 100vw;
+		overflow: hidden;
+		background-color: black;
+		}
+		.carousel-item img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 100%;
+		width: auto;
+		-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+		}
+    </style>
+
+</head>
+<body>
+		<!-- nav starts -->
+		<header class="header_area">
+			<div class="main_menu" id="mainNav">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h header_logo" href="index.html">Lydia Lin</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav" style="margin-left:auto;">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+								<li class="nav-item submenu dropdown">
+									<a href="index.html#project" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Portfolio</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="index.html#project">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Writing Samples</a></li>
+									</ul>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- nav ends -->
+        <!--carousel intro starts -->
+        <div class="row textCTN">
+			<div class="col-md-12 marginTop noPadding">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="images/zero/404.png" class="d-block img" alt="Opera Face">
+				      <div class="carousel-caption text-start">
+				      </div>
+                    </div>
+
+				  </div>
+				</div>
+			</div>
+		</div>
+        <!--carousel intro ends -->
+		<div class="portfolio_details_area p_120" >
+            <div class="detail_container " >
+                <div class="portfolio_details_inner" >
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio_right_text">
+                                <h2>Dynamic Zero</h2>
+                                <br>
+								<p>Dynamic Zero, a short film produced in the spring of 2022, captures the haunting atmosphere of the Shanghai lockdown and the pervasive surveillance culture that pervaded it. The film utilizes eyes as a metaphor to convey the feeling of being watched and controlled, and powerfully conveys the tension between government policies and the frustration and anger felt by the people who were forced to endure them. It is a poignant commentary on the impact of authoritarianism and the struggle for freedom.</p>
+                                <ul class="list">
+                                    <li><span>Form</span>: Short film</li>
+                                    <li><span>Project Type</span>: Group Project</li>
+                                    <li><span>My Role</span>: Storyboard, Audio & Video Editing</li>
+                                    <li><span>Tools in Use</span>: Adobe Audition, Premiere Pro, Final Cut Pro, ArcTime Pro</li>
+                                    <li><span>Completed on</span>: 2022</li>
+                                </ul>
+                                <br>
+								<iframe width="92%" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1MrvswX7Anc-8wQh9UJKb6Byfrymrya93/preview" allow="autoplay"></iframe>
+                                <br>
+                                <!-- <br>
+                                <br>
+                                <h4>Problem Statement</h4>
+								<p style="margin: 0px;">This project wants to focus on the seemingly inconsequential, yet essential moments of everyday life that collectively form the rich fabric of human experience.</p>
+								<p>These 'non-essential' stories, often overlooked, are what truly shape our lives and the fabric of our collective history.</p>
+                                <br>
+                                <div class="row" >
+                                    <div class="col-md-6" >
+                                        <a href="http://10.214.15.110/client/">Project Link (NYU community members only)</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="https://shanghai.nyu.edu/news/creating-digital-memory-map-century-avenue-campus">Newsletter Post</a>
+                                    </div>
+                                </div>
+                                <div class="row" >
+                                    <div class="col-md-4" >
+                                        <div>
+                                            <h4>Aethetics</h4>
+                                            <p>- Line Art</p>
+                                            <p>- Strands</p>
+                                            <p>- Continuety & Connection</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div>
+                                            <img width="100%" src="images/verse1555/line1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div>
+                                            <img width="90%" src="images/verse1555/line2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <img width="95%" style="margin-top: 20px;" src="images/verse1555/cafe.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h4>Development</h4>
+                                            <p>- Photogrammetry</p>
+                                            <p>- AR Test & Implementation</p>
+                                            <p>- Full-Stack Development</p>
+                                            <p>- UI feature Design</p>
+                                        </div>
+                                        
+                                        <div class="col-md-8">
+                                            <iframe src="https://drive.google.com/file/d/1V0Qc2SmLcsesVEBuOghUM5iuHxcW2mKn/preview" width="90%" style="aspect-ratio: 2/1;" allow="autoplay"></iframe>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+		<!-- footer starts -->
+		<footer class="row footerBG paddingLg text">
+			<div class="col-md-12 my-auto">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 d-flex justify-content-evenly align-items-center">
+							<i class="bi bi-instagram"></i>
+							<i class="bi bi-meta"></i>
+							<i class="bi bi-linkedin"></i>
+							<i class="bi bi-tiktok"></i>
+						</div>
+						<div class="col-md-6 d-flex flex-column justify-content-center">
+						<h4 class="footerT">Comments, Thoughts, Or ...</h4>
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Anything you want to share with me!" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary btnCT" type="button" id="button-addon2">&nbsp;Send&nbsp;</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer ends -->
+	</div>
+
+
+	<!--- vcard js link-->
+    <!-- <script src="./js/script.js"></script> -->
+
+	<!-- bootstrap js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="js/counter-up/jquery.waypoints.min.js"></script>
+	<script src="js/counter-up/jquery.counterup.min.js"></script>
+	<!-- <script src="js/sketch.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lydia :)</title>
+
+	<!-- boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+	<!--vcard css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- responsive css from temp 1 -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<!-- Media query for narrow browser width -->
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<!-- my js -->
+	<script src="js/myJS.js"></script>
+
+	<!--
+    - google font link
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<!-- external -->
+	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- p5 demo -->
+	<script src="libraries/p5.js"></script>
+	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <style>
+		.carousel-item {
+		position: relative;
+		min-width: 100vw;
+		overflow: hidden;
+		background-color: black;
+		}
+		.carousel-item img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 100%;
+		width: auto;
+		-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+		}
+    </style>
+
+</head>
+<body>
+		<!-- nav starts -->
+		<header class="header_area">
+			<div class="main_menu" id="mainNav">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h header_logo" href="index.html">Lydia Lin</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav" style="margin-left:auto;">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+								<li class="nav-item submenu dropdown">
+									<a href="index.html#project" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Portfolio</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="index.html#project">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Writing Samples</a></li>
+									</ul>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- nav ends -->
+        <!--carousel intro starts -->
+        <div class="row textCTN">
+			<div class="col-md-12 marginTop noPadding">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+				  <div class="carousel-indicators">
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  </div>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="images/opera/OperaFace.png" class="d-block img" alt="Opera Face">
+				      <div class="carousel-caption text-start">
+				        <h1 class="cap1">Opeara Face</h1>
+				        <p>An Peking Opera face band app featuring facial recognition</p>
+				      </div>
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>
+		</div>
+        <!--carousel intro ends -->
+		<div class="portfolio_details_area p_120" >
+            <div class="detail_container " >
+                <div class="portfolio_details_inner" >
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio_right_text">
+                                <h2>Opera Face</h2>
+                                <br>
+								<p>Inspired by fond childhood memories of listening to Peking Opera with my grandparents, I created an app that transforms your facial expressions into the rhythmic beats of Peking opera percussion instruments — a face band where simple gestures like smile or raise of an eyebrow triggers a different instrument. My aim is to rejuvenate this timeless art form, making it accessible, engaging, and entertaining for everyone, from devoted fans to newcomers.</p>
+                                <p>The App won the WWDC23 Student Swift Challenge hosted by Apple.</p>
+                                <ul class="list">
+                                    <li><span>Form</span>: AR APP</li>
+                                    <li><span>Project Type</span>: Individual Work</li>
+                                    <li><span>My Role</span>: Designer & Developer</li>
+                                    <li><span>Tools in Use</span>: Xcode, Swift, ARCore, PhotoShop, Figma</li>
+                                    <li><span>Completed on</span>: 20 April 2023</li>
+                                </ul>
+                                <br>
+                                <br>
+                                <!-- <iframe width="92%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/AfnHyqUNjhU?si=CxBHhjhwrsWxzi41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                                <br>
+                                <br>
+                                <h4>Problem Statement</h4>
+								<p style="margin: 0px;">Growing up in China, we were exposed to Peking Opera on TV and in textbooks since little. Yet, one may also find that its regular listeners are comparatively rare --- especially in the younger generation.</p>
+								<p>The app aims at introducing Peking Opera to users of the new generation in a fun, engaging and accessible way.</p>
+                                <br>
+                                <div class="row" >
+                                    <div class="col-md-6" >
+                                        <div>
+                                            <h4>Background</h4>
+                                            <p>Peking Opera is a classic Chinese art form that combines music, dance, and storytelling with stunning costumes and masks to bring historical and folk tales to life</p>
+                                            <strong>The Four Roles: </strong>
+                                            <p>There are four primary character types in Peking Opera, each with its own distinct makeup and performance styles</p>
+                                            <strong>Music of Peking Opera: </strong>
+                                            <p style="margin: 0px;">Instrumental resources in Peking Opera divided into two groups: </p>
+                                            <p style="margin: 0px;">- Melodic/lyrical instruments (wen chang): accompany singing, play scene music</p>
+                                            <p>- Percussive/military instruments (wu chang): cooperate with actors' performance, provide rhythms</p>
+                                            <br>
+                                            <h4>Interaction Design</h4>
+                                            <p>The app features common percussion instruments used in Peking opera. Think of it like a face band, where different facial expressions trigger different instruments. Raise your eyebrows for the sound of a large gong; look up and hear the cymbals; look down and play the small gong; smile and hear the clappers; puff out your cheeks and hear the Peking opera drum. The louder you twist your face, the louder the instruments play.</p>
+                                            <p>The app also has four face filters that represent the four main roles of Peking opera. Nod your head to switch between the filters and immerse yourself in the opera. You can even record your compositions so that you can either incorporate traditional Peking opera percussion into your own music or compose a new piece of percussion music. And, check out brief introductions to each instrument and role by hitting the icons!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div>
+                                            <img width="85%" style="margin-top: 20px;" src="images/opera/four_roles.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img width="85%" style="margin-top: 20px;" src="images/opera/percussion.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <img width="95%" style="margin-top: 20px;" src="images/opera/interflow.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <h4>Tech Implementation</h4>
+                                        <p>Technology plays a vital role in the app's immersive experience. I leveraged the power of ARkit and Scenekit to recognize users' facial expressions and trigger corresponding instrument sounds - a whole new level of interactivity and creativity to music-making! Plus, with AVFoundation, users can easily record their musical masterpieces and sing along. And to make the app even more flexible, I fully implemented it in swiftUI, using the MVC design pattern (maybe not that typical, but I tried my best as a self-taught). There’s still room for improvement, such as the detection of head nods. But as a newcomer to Swift, I’ve learned a lot from building it from scratch.</p>
+                                    </div>
+                                </div>
+                                <!-- <iframe width="92%" style="aspect-ratio: 16/9;" src="//player.bilibili.com/player.html?aid=450074476&bvid=BV1ej411i7oB&cid=1309027177&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+		<!-- footer starts -->
+		<footer class="row footerBG paddingLg text">
+			<div class="col-md-12 my-auto">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 d-flex justify-content-evenly align-items-center">
+							<i class="bi bi-instagram"></i>
+							<i class="bi bi-meta"></i>
+							<i class="bi bi-linkedin"></i>
+							<i class="bi bi-tiktok"></i>
+						</div>
+						<div class="col-md-6 d-flex flex-column justify-content-center">
+						<h4 class="footerT">Comments, Thoughts, Or ...</h4>
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Anything you want to share with me!" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary btnCT" type="button" id="button-addon2">&nbsp;Send&nbsp;</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer ends -->
+	</div>
+
+
+	<!--- vcard js link-->
+    <!-- <script src="./js/script.js"></script> -->
+
+	<!-- bootstrap js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="js/counter-up/jquery.waypoints.min.js"></script>
+	<script src="js/counter-up/jquery.counterup.min.js"></script>
+	<!-- <script src="js/sketch.js"></script> -->
+
+</body>
+</html>
