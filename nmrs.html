@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lydia :)</title>
+
+	<!-- boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+	<!--vcard css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- responsive css from temp 1 -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<!-- Media query for narrow browser width -->
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<!-- my js -->
+	<script src="js/myJS.js"></script>
+
+	<!--
+    - google font link
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<!-- external -->
+	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- p5 demo -->
+	<script src="libraries/p5.js"></script>
+	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <style>
+		.carousel-item {
+		position: relative;
+		min-width: 100vw;
+		overflow: hidden;
+		background-color: black;
+		}
+		.carousel-item img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 100%;
+		width: auto;
+		-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+		}
+    </style>
+
+</head>
+<body>
+		<!-- nav starts -->
+		<header class="header_area">
+			<div class="main_menu" id="mainNav">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h header_logo" href="index.html">Lydia Lin</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav" style="margin-left:auto;">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+								<li class="nav-item submenu dropdown">
+									<a href="index.html#project" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Portfolio</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="index.html#project">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Writing Samples</a></li>
+									</ul>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- nav ends -->
+        <!--carousel intro starts -->
+        <div class="row textCTN">
+			<div class="col-md-12 marginTop noPadding">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="images/nmrs/myCover.png" class="d-block img" alt="Opera Face">
+				      <div class="carousel-caption text-start">
+				        <h1 class="cap1">Research: Data Privacy</h1>
+				        <p>A research journey exploring data privacy issues in the digital age during the "New Media Research Studio" course</p>
+				      </div>
+                    </div>
+				    </div>
+
+				  </div>
+				</div>
+			</div>
+		</div>
+        <!--carousel intro ends -->
+		<div class="portfolio_details_area p_120" >
+            <div class="detail_container " >
+                <div class="portfolio_details_inner" >
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio_right_text">
+                                <h2>New Media Research Studio: Data Privacy</h2>
+                                <br>
+								<p>As part of the "New Media Research Studio," a dynamic and project-intensive course, 
+                                    I conducted an in-depth exploration of emerging practices and trends in new media, 
+                                    with a specific focus on the intersection of digital platforms and data privacy. 
+                                    Over the semester, I conducted four case studies on distinct platforms, addressing the 
+                                    privacy issues. This research culminated in a final documentary of Twitter,
+                                    where each group in the class contributed a segment to study the platform from diffenret angles. 
+                                </p>
+                                <ul class="list">
+                                    <li><span>Form</span>: Case Studies, Website, Documentary</li>
+                                    <li><span>Project Type</span>: Individual Work & Group Project</li>
+                                    <li><span>Tools in Use</span>: WordPress, Adobe Photoshop, Adobe Premiere Pro</li>
+                                    <li><span>Completed on</span>: May. 2022</li>
+                                </ul>
+                                <br>
+                                <br>
+                                <h4>Case Studies</h4>
+                                <hr>
+								<br>
+                                <div class="row">
+									<div class="col-md-6">
+										<h5>Case Study #1</h5>
+                                        <strong>Displaying IP locations, Dismissing Data Privacy? </strong>
+										<p></p>
+                                        <p>
+                                            A case study into Weibo's new feature of displaying IP locations: what does the new setting mean in this age of data privacy, how does it concerns us, and why’s that important?
+                                        </p>
+                                        <p style="font-size: 15pt;"><a href="https://wp.nyu.edu/new_media_research_lydia22/category/case-study/case-study-1/" target=”_blank”><button class="btn aboutBTN btnT">Read Full Article</button></a></p>
+									</div>
+                                    <div class="col-md-1"></div>
+									<div class="col-md-5">
+										<img width="80%" style="margin-top: 28px;" src="images/nmrs/c1.png" alt="">
+									</div>
+								</div>
+                                <hr>
+                                <div class="row">
+									<div class="col-md-6">
+										<h5>Case Study #2</h5>
+                                        <strong>Our Geolocation Matters: Data Privacy in Ride-Hailing Industry</strong>
+										<!-- <p></p> -->
+                                        <p>
+                                            A case study into DiDi, who Fined $1.2 billion for violating China cybersecurity laws: 
+                                            what’s the gold in our data that fascinated the ride-hailing companies so much, and why it drives China such a clampdown on Didi and data security?
+                                        </p>
+                                        <p style="font-size: 15pt;"><a href="https://wp.nyu.edu/new_media_research_lydia22/category/case-study/case-study-2/" target=”_blank”><button class="btn aboutBTN btnT">Read Full Article</button></a></p>
+									</div>
+                                    <div class="col-md-1"></div>
+									<div class="col-md-5">
+										<img width="80%" style="margin-top: 35px;" src="images/nmrs/cw.jpeg" alt="">
+									</div>
+								</div>
+                                <hr>
+                                <div class="row">
+									<div class="col-md-6">
+										<h5>Case Study #3</h5>
+                                        <strong>You Want a Cookie? Data Privacy in the Retail Industry</strong>
+                                        <p>
+                                            A case study into Walmart's big data technology and its privacy issues – after all, both our privacy and wallets can be fragile in this age of big data.
+                                        </p>
+                                        <p style="font-size: 15pt;"><a href="https://wp.nyu.edu/new_media_research_lydia22/category/case-study/case-study-3/" target=”_blank”><button class="btn aboutBTN btnT">Read Full Article</button></a></p>
+									</div>
+                                    <div class="col-md-1"></div>
+									<div class="col-md-5">
+										<img width="80%" style="margin-top: 26px;" src="images/nmrs/c3.png" alt="">
+									</div>
+								</div>
+                                <hr>
+                                <div class="row">
+									<div class="col-md-6">
+										<h5>Case Study #4</h5>
+                                        <strong>Chinese Health Code System in the 'Black Box'</strong>
+                                        <p>
+                                            A case study into the data breach of Shanghai Health Code 'Sui-Shen-Ma' -- 
+                                            No one was found responsible for the leak, because no one really knows the whole picture of the entire system.
+                                        </p>
+                                        <p style="font-size: 15pt;"><a href="https://wp.nyu.edu/new_media_research_lydia22/category/case-study/case-study-4/" target=”_blank”><button class="btn aboutBTN btnT">Read Full Article</button></a></p>
+									</div>
+                                    <div class="col-md-1"></div>
+									<div class="col-md-5">
+										<img width="80%" style="margin-top: 25px;" src="images/nmrs/c4.png" alt="">
+									</div>
+								</div>
+                                <hr>
+
+								<div class="row" style="margin-bottom: 0px;">
+                                    <h4>Final Documentary</h4>
+                                    <p>The research project culminated in a final documentary on Twitter and its data privacy. 
+                                        In collaboration with my peers, our group played a key role in investigating and presenting the Terms of Service 
+                                        segment of the documentary. Through street interviews, we gathered diverse user experiences. 
+                                        We further supplemented our insights with in-depth discussions with legal and technical 
+                                        experts to provide a comprehensive exploration of the platform's terms and user acceptance.
+                                    </p>
+								</div>
+                                <p>Final Production: on Twitter's Terms of Service</p>
+                                <iframe width="92%" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1AfHjSIwSCAq2SbsR7PGQmGaKL9mwtyec/preview" allow="autoplay"></iframe>
+                                <p></p>
+                                <p style="font-size: 15pt;"><a href="https://wp.nyu.edu/nmrs_fall_2022/final-documentary/" target=”_blank”><button class="btn aboutBTN btnT">Watch Full Documentary (NYU community members only)</button></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+		<!-- footer starts -->
+		<footer class="row footerBG paddingLg text">
+			<div class="col-md-12 my-auto">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 d-flex justify-content-evenly align-items-center">
+							<i class="bi bi-instagram"></i>
+							<i class="bi bi-meta"></i>
+							<i class="bi bi-linkedin"></i>
+							<i class="bi bi-tiktok"></i>
+						</div>
+						<div class="col-md-6 d-flex flex-column justify-content-center">
+						<h4 class="footerT">Comments, Thoughts, Or ...</h4>
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Anything you want to share with me!" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary btnCT" type="button" id="button-addon2">&nbsp;Send&nbsp;</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer ends -->
+	</div>
+
+
+	<!--- vcard js link-->
+    <!-- <script src="./js/script.js"></script> -->
+
+	<!-- bootstrap js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="js/counter-up/jquery.waypoints.min.js"></script>
+	<script src="js/counter-up/jquery.counterup.min.js"></script>
+	<!-- <script src="js/sketch.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lydia :)</title>
+
+	<!-- boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+	<!--vcard css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- responsive css from temp 1 -->
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<!-- Media query for narrow browser width -->
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/custom.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<!-- my js -->
+	<script src="js/myJS.js"></script>
+
+	<!--
+    - google font link
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<!-- external -->
+	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- p5 demo -->
+	<script src="libraries/p5.js"></script>
+	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <style>
+		.carousel-item {
+		position: relative;
+		min-width: 100vw;
+		overflow: hidden;
+		background-color: black;
+		}
+		.carousel-item img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 100%;
+		width: auto;
+		-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+		}
+    </style>
+
+</head>
+<body>
+		<!-- nav starts -->
+		<header class="header_area">
+			<div class="main_menu" id="mainNav">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h header_logo" href="index.html">Lydia Lin</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav" style="margin-left:auto;">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+								<li class="nav-item submenu dropdown">
+									<a href="index.html#project" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Portfolio</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="index.html#project">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Writing Samples</a></li>
+									</ul>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- nav ends -->
+        <!--carousel intro starts -->
+        <div class="row textCTN">
+			<div class="col-md-12 marginTop noPadding">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="images/webdev/canva.jpg" class="d-block img" alt="Web Dev">
+				      <div class="carousel-caption text-start">
+				        <h1 class="cap1">Web Dev & Design Collection</h1>
+				        <p>Explore my web development journey through a diverse collection of projects</p>
+				      </div>
+                    </div>
+
+				  </div>
+				</div>
+			</div>
+		</div>
+        <!--carousel intro ends -->
+		<div class="portfolio_details_area p_120" >
+            <div class="detail_container " >
+                <div class="portfolio_details_inner" >
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio_right_text">
+                                <h2>Collection: Web Design & Developement</h2>
+                                <br>
+								<p>Welcome to my web development portfolio! Here I've curated a diverse collection of projects that highlight my journey from crafting content-intensive static websites to developing interactive and full-stack web applications. Each project in this collection reflects my passion for creating engaging and user-friendly online experiences. Let's explore the evolution of my skills and the variety of projects I've had the pleasure of working on.</p>
+                                <ul class="list">
+                                    <li><span>Form</span>: Static & Dynamic Websites</li>
+                                    <li><span>Project Type</span>: Individual Work</li>
+                                    <li><span>Tools in Use</span>: HTML, CSS, JS, MySQL, PHP</li>
+                                    <li><span>Completed in</span>: 2022</li>
+                                </ul>
+                                <br>
+								<br>
+								<hr>
+								<div class="row">
+									<h4>#1 The Cause Site</h4>
+									<div class="col-md-6">
+                                        <p>A website addressing potential gender inequality in the workplace</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Static Webstie</li>
+                                            <li><span>Feature</span>: JS animation, Cookie Banner, Donate</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS</li>
+                                        </ul>
+                                        <p></p>
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://lydia-lll.github.io/web_dev_collection/causeSite/index.html" target=”_blank”><button class="btn aboutBTN btnT">Visit Live Site</button></a></p>
+									</div>
+									<div class="col-md-6">
+										<img width="90%" style="margin-top: 15px;" src="images/webdev/site1.png" alt="">
+									</div>
+								</div>
+								<hr>
+                                <div class="row">
+									<h4>#2 The Interest Site</h4>
+									<div class="col-md-6">
+                                        <p>A website introducing Chinese cuisines --- my favourite topic!</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Static Webstie</li>
+                                            <li><span>Feature</span>: sticky scrolling</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS</li>
+                                        </ul>
+                                        <p></p>
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://lydia-lll.github.io/web_dev_collection/interest2/interest/index.html" target=”_blank”><button class="btn aboutBTN btnT">Visit Live Site</button></a></p>
+									</div>
+									<div class="col-md-6">
+										<img width="90%" style="margin-top: 15px; max-height: 28vh;" src="images/webdev/site2.png" alt="">
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<h4>#3 Gotta Catch 'em All!</h4>
+									<div class="col-md-6">
+                                        <p>A browser-based game for catching Pokémon</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Static Interactive Webstie</li>
+                                            <li><span>Feature</span>: web game</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS</li>
+                                        </ul>
+                                        <p></p>
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://lydia-lll.github.io/web_dev_collection/macro3/" target=”_blank”><button class="btn aboutBTN btnT">Visit Live Site</button></a></p>
+									</div>
+									<div class="col-md-6">
+										<img width="85%" style="margin-top: 15px; max-height: 28vh;" src="images/webdev/site3.png" alt="">
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<h4>#4 Design Your Own Hogwarts!</h4>
+									<div class="col-md-6">
+                                        <p>A web-based construction game with drag-and-drop mechanics</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Static Interactive Webstie</li>
+                                            <li><span>Feature</span>: web game</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS</li>
+                                        </ul>
+                                        <p></p>
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://lydia-lll.github.io/web_dev_collection/macro4/final/index.html" target=”_blank”><button class="btn aboutBTN btnT">Visit Live Site</button></a></p>
+									</div>
+									<div class="col-md-6">
+										<img width="85%" style="margin-top: 15px; max-height: 28vh;" src="images/webdev/site4.png" alt="">
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<h4>#5 Memory Matching Madness</h4>
+									<div class="col-md-6">
+                                        <p>A web-based memory matching game</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Static Interactive Webstie</li>
+                                            <li><span>Feature</span>: customized level, leader board, realtime countdown, data storage & management</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS</li>
+                                        </ul>
+                                        <p></p>
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://lydia-lll.github.io/web_dev_collection/macro5/index.html" target=”_blank”><button class="btn aboutBTN btnT">Visit Live Site</button></a></p>
+									</div>
+									<div class="col-md-6">
+										<img width="85%" style="margin-top: 15px; max-height: 28vh;" src="images/webdev/site5.png" alt="">
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<h4>#6 Seasonal To-Do List</h4>
+									<div class="col-md-6">
+                                        <p>A web-based memo application</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Static Interactive Webstie</li>
+                                            <li><span>Feature</span>: filter selection, text input, sticky notes, checkbox</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS</li>
+                                        </ul>
+                                        <p></p>
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://lydia-lll.github.io/web_dev_collection/macro6/index.html" target=”_blank”><button class="btn aboutBTN btnT">Visit Live Site</button></a></p>
+									</div>
+									<div class="col-md-6">
+										<img width="85%" style="margin-top: 15px; max-height: 28vh;" src="images/webdev/site6.png" alt="">
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<h4>#7 Hogwarts House Sorting Quiz</h4>
+									<div class="col-md-6">
+                                        <p>Are you Gryffindor? Are you Hufflepuff? Are you Slytherin? Are you Ravenclaw? Find out with this web-based Hogwarts Sorting Experience</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Dynamic Interactive Webstie</li>
+                                            <li><span>Feature</span>: personalized score calculation, school assignment, accesible distribution of quiz submissions</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS, PHP</li>
+                                        </ul>
+                                        <p></p>
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://github.com/lydia-lll/web_dev_collection/tree/main/macro7" target=”_blank”><button class="btn aboutBTN btnT">Access Source Code</button></a></p>
+									</div>
+									<div class="col-md-6">
+										<img width="85%" style="margin-top: 0px; max-height: 22vh;" src="images/webdev/site7.1.png" alt="">
+										<img width="85%" style="margin-top: 10px; max-height: 22vh;" src="images/webdev/site7.2.png" alt="">
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-6">
+										<h4>#8 Movie Database</h4>
+                                        <p>A personal movie list database</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Dynamic Interactive Webstie</li>
+                                            <li><span>Feature</span>: personalized movie list, text input, data storage and management</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS, PHP, SQL</li>
+                                        </ul>
+                                        <p></p>
+										<img width="85%" style="margin-top: 0px; max-height: 28vh;" src="images/webdev/site8.png" alt="">
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://github.com/lydia-lll/web_dev_collection/tree/main/macro8" target=”_blank”><button class="btn aboutBTN btnT">Access Source Code</button></a></p>
+									</div>
+									<div class="col-md-6">
+										<h4>#9 Online Chatroom</h4>
+                                        <p>A realtime online chatroom application</p>
+										<ul class="list">
+                                            <li><span>Type</span>: Dynamic Interactive Webstie</li>
+                                            <li><span>Feature</span>: user management (sign up & login), realtime chat, data storage & management</li>
+                                            <li><span>Techniques</span>: HTML, CSS, JS, PHP, SQL</li>
+                                        </ul>
+                                        <p></p>
+										<img width="85%" style="margin-top: 0px; max-height: 28vh;" src="images/webdev/site9.2.png" alt="">
+                                        <p style="margin-left: 10vw; margin-top: 3vw;"><a href="https://github.com/lydia-lll/web_dev_collection/tree/main/macro9" target=”_blank”><button class="btn aboutBTN btnT">Access Source Code</button></a></p>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+		<!-- footer starts -->
+		<footer class="row footerBG paddingLg text">
+			<div class="col-md-12 my-auto">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 d-flex justify-content-evenly align-items-center">
+							<i class="bi bi-instagram"></i>
+							<i class="bi bi-meta"></i>
+							<i class="bi bi-linkedin"></i>
+							<i class="bi bi-tiktok"></i>
+						</div>
+						<div class="col-md-6 d-flex flex-column justify-content-center">
+						<h4 class="footerT">Comments, Thoughts, Or ...</h4>
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Anything you want to share with me!" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary btnCT" type="button" id="button-addon2">&nbsp;Send&nbsp;</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer ends -->
+	</div>
+
+
+	<!--- vcard js link-->
+    <!-- <script src="./js/script.js"></script> -->
+
+	<!-- bootstrap js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="js/counter-up/jquery.waypoints.min.js"></script>
+	<script src="js/counter-up/jquery.counterup.min.js"></script>
+	<!-- <script src="js/sketch.js"></script> -->
+
+</body>
+</html>
